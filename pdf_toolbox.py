@@ -68,7 +68,7 @@ def convert(convert_list):
 root = tk.Tk()
 root.title('pdf_editor')
 root_width = 600
-root_height = 430
+root_height = 450
 root.geometry(f'{root_width}x{root_height}')
 root.resizable(False, False)
 
@@ -106,7 +106,7 @@ label_msg.config(text='歡迎使用本程式')
 
 # bottoms
 bottom_frame = tk.Frame(root)
-bottom_frame.pack(padx=20)
+bottom_frame.pack(padx=20, pady=5)
 
 btn_get_text = tk.Button(bottom_frame, text='【獲取pdf文字】', command=lambda: get_text(get_file('pdf')))
 btn_get_text.grid(column=0, row=0, padx=20, pady=10)
